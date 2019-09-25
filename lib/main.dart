@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'demo/animation_demo.dart';
 import 'pages/pie_chart_demo.dart';
 
 void main() => runApp(MyApp());
@@ -41,6 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
             title: Text("PieChartDemo"),
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => PieChartDemo()));
+            },
+          ),
+          ListTile(
+            title: Text("AnimationDemo"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AnimationDemo()));
             },
           )
         ],
