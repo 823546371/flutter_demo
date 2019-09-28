@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'demo/animation_demo.dart';
+import 'demo/notification_listener_demo.dart';
+import 'demo/scroller_demo.dart';
 import 'pages/pie_chart_demo.dart';
 
 void main() => runApp(MyApp());
@@ -48,6 +50,18 @@ class _MyHomePageState extends State<MyHomePage> {
             title: Text("AnimationDemo"),
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => AnimationDemo()));
+            },
+          ),
+          ListTile(
+            title: Text("ScrollerDemo"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ScrollerDemo()));
+            },
+          ),
+          ListTile(
+            title: Text("NotificationListenerDemo"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => NotificationListenerDemo()));
             },
           )
         ],
